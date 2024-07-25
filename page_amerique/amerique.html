@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../countries/Amérique/us.png" type="image/icon type">
+    <link href="amerique.css" rel="stylesheet" />    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Geographer</title>
+</head>
+<body>   
+    <div class="menu">
+        <!-- Utilisation d'une checkbox -->
+        <input type="checkbox" id="hamburger">
+        <!-- Label de la checkbox -->
+        <label id="hamburger-logo" for="hamburger">☰</label>
+        <!-- Le reste du menu -->
+        <nav>
+            <a href="../index.html">Page d'accueil</a>
+            <a href="../europe.html">Europe</a>
+            <a href="../page_asie/asie.html">Asie</a>
+            <a href="../page_afrique/afrique.html">Afrique</a>
+            <a href="../page_amerique/amerique.html">Amérique</a>
+            <a href="../page_oceanie/oceanie.html">Océanie</a>
+            <a href="../page_commentaires/comentaires.html">Commentaires</a>
+        </nav>
+      </div>
+
+    <div id="game">
+        <img id='flag' alt="flag">
+        <div class="container">
+            <input class='input' type="text" required="">
+            <label class="label">Capitale</label>
+        </div>
+        <p id="triche2">Pays</p>
+        <p id="triche">Triche</p>
+
+    </div>
+    <div id="win">
+        <p id="gotxt">Gagné</p>
+
+        <button type="button" class="button2">
+            <span class="button__text2">Jouer</span>
+            <span class="button__icon2"><svg class="svg" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M35.3 12.7c-2.89-2.9-6.88-4.7-11.3-4.7-8.84 0-15.98 7.16-15.98 16s7.14 16 15.98 16c7.45 0 13.69-5.1 15.46-12h-4.16c-1.65 4.66-6.07 8-11.3 8-6.63 0-12-5.37-12-12s5.37-12 12-12c3.31 0 6.28 1.38 8.45 3.55l-6.45 6.45h14v-14l-4.7 4.7z"></path><path d="M0 0h48v48h-48z" fill="none"></path></svg></span>
+        </button>
+        <span class="winstreak">0</span>
+        <span class="temps"></span>
+    </div>
+    
+    <div id="gameover">
+        <p id="gotxt">Game Over</p>
+
+        <button type="button" class="button">
+            <span class="button__text">Jouer</span>
+            <span class="button__icon"><svg class="svg" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M35.3 12.7c-2.89-2.9-6.88-4.7-11.3-4.7-8.84 0-15.98 7.16-15.98 16s7.14 16 15.98 16c7.45 0 13.69-5.1 15.46-12h-4.16c-1.65 4.66-6.07 8-11.3 8-6.63 0-12-5.37-12-12s5.37-12 12-12c3.31 0 6.28 1.38 8.45 3.55l-6.45 6.45h14v-14l-4.7 4.7z"></path><path d="M0 0h48v48h-48z" fill="none"></path></svg></span>
+        </button>
+
+        <span class="winstreak">0</span>
+        <span class="reponse">0</span>
+    </div>
+    <span class="timer">0</span>
+
+    <script src="amerique.js"></script>
+</body>
+</html>
