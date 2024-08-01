@@ -132,6 +132,34 @@ $('.input').on('keydown', function(event){
     regexString = listcap[indexcout].slice(1, -1); //j'enlève l'echappement '/' de l'élément choisie du tableau de regex 
     const regexcap = new RegExp(regexString);  //je le converti en regex sans les guillemet 'exemple' -> /exemple/
     
+    let time = window.setInterval(function() {
+        if(event.key!='Enter'){
+            if(regexcap.test($('.input').val())){ // on test avec le regex si l'input est bon
+                if(winstreak==51){ // 27 est le nombre de pays , donc fin
+                    $('#win').css('display', 'block'),
+                    $('.button2').on('mousedown', function(event){location.reload()}),
+                    $('.temps').text('Temps'+' : '+ seconds +" s"),
+                    $('.winstreak').text(winstreak),
+                    $('.winstreak').attr('title','Winstreak : '+winstreak+"/"+listflag_temp.length);
+                    clearInterval(timerId);
+                }
+                $('.input').val(''),
+                // on suprime pour chaque tableau les élément relatif au pays : capital, fond d'image, image drapeau
+                listcap.splice(indexcout, 1), listcout.splice(indexcout, 1),
+                listflag.splice(indexcout, 1), listbg.splice(indexcout,1), listcap2.splice(indexcout, 1), 
+                flagindex=Math.floor(Math.random()*listflag.length), // on repioche un chiffre aléatoire
+                flag = $('img#flag'),
+                flag.attr({
+                    src: listflag[flagindex]}
+            ),
+            indexcout = listflag.indexOf(flag.attr('src')),
+            $('#triche').text(listcout[indexcout]),
+            document.body.style.backgroundImage = "url("+listbg[indexcout]+")",
+            winstreak+=1
+            }
+        }
+    }, 10);
+
     if(event.key==='Enter'){
         if(regexcap.test($('.input').val())){ // on test avec le regex si l'input est bon
             if(winstreak==51){ // 27 est le nombre de pays , donc fin
