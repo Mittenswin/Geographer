@@ -19,8 +19,7 @@
 
 | Frontend         | Backend         | Base de données | Regex / Fichier       |
 |------------------|------------------|------------------|------------------------|
-| HTML / CSS / JS  | PHP              | MySQL            | Python  |
-| AJAX             |                  |                  |                        |
+| HTML / CSS / JS  | PHP / AJAX              | MySQL            | Python  |
 
 ---
 
