@@ -17,10 +17,10 @@
 
 ## ⚙️ Technologies utilisées
 
-| Frontend         | Backend         | Base de données |
-|------------------|------------------|------------------|
-| HTML / CSS / JS  | PHP / Python     | MySQL            |
-| AJAX             |                  |                  |
+| Frontend         | Backend         | Base de données | Regex / Fichier       |
+|------------------|------------------|------------------|------------------------|
+| HTML / CSS / JS  | PHP              | MySQL            | Python  |
+| AJAX             |                  |                  |                        |
 
 ---
 
