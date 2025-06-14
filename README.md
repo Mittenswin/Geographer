@@ -1,4 +1,4 @@
-# 🌍 Geographer – Le Jeu des Capitales
+# 🌍 Geographer
 
 **Geographer** est un jeu en ligne où votre objectif est de deviner, une à une, toutes les **capitales** d'une région du monde. Si vous réussissez, vous obtenez le prestigieux titre de **Geographer** !
 
