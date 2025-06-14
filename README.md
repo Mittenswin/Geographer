@@ -2,8 +2,6 @@
 
 **Geographer** est un jeu en ligne où votre objectif est de deviner, une à une, toutes les **capitales** d'une région du monde. Si vous réussissez, vous obtenez le prestigieux titre de **Geographer** !
 
-> 🧠 Apprenez en vous amusant avec ce quiz géographique interactif – en commençant par l'Europe, et bientôt l'Asie et l'Afrique !
-
 🌐 **Lien vers le jeu** : [Geographer.kesug.com](https://geographer.kesug.com)
 
 ---
